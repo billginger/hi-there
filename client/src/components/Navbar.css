@@ -1,3 +1,16 @@
+@font-face {
+  font-family: ZenDots;
+  src: url('./fonts/ZenDots-Regular.ttf') format('truetype');
+}
+
+.navbar {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+}
+
 .logo {
-  font-size: 36px;
+  font-family: ZenDots, "Arial Black";
+  font-size: 30px;
+  background: linear-gradient(-45deg, #bd34fe 30%, #41d1ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
