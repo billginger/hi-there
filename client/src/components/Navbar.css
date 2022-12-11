@@ -14,3 +14,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+a {
+  font-weight: 600;
+}
