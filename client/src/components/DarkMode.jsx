@@ -16,16 +16,16 @@ const switchDarkMode = value => {
 };
 
 const DarkMode = () => (
-  <li className="flex border border-gray-600 rounded">
+  <li className="flex border border-gray-600 rounded text-[13px]">
     <div
-      className="p-1 text-white bg-gradient-to-br from-gray-600 to-violet-600 dark:bg-none dark:cursor-pointer"
+      className="p-1 text-white bg-gradient-to-br from-violet-600 to-gray-600 dark:bg-none dark:cursor-pointer"
       onClick={() => switchDarkMode('off')}
     >
       <BsSun />
     </div>
     <div
-      className="p-1 text-gray-800 cursor-pointer dark:text-white dark:bg-gradient-to-br dark:from-gray-600
-        dark:to-violet-800 dark:cursor-auto"
+      className="p-1 text-gray-800 cursor-pointer dark:text-white dark:bg-gradient-to-br dark:from-gray-700
+        dark:to-violet-900 dark:cursor-auto"
       onClick={() => switchDarkMode('on')}
     >
       <BsMoon />
