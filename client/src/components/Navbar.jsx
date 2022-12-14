@@ -1,7 +1,7 @@
 import { DarkMode } from './DarkMode';
 import './Navbar.css'
 
-const MenuItems = ['Intro', 'Tech Stacks', 'Hobbies', 'Web3 Demo'];
+const MenuItems = ['Intro', 'Skills', 'Hobbies', 'Web3 Demo'];
 
 const MenuItem = ({ name }) => (
   <li>
@@ -17,7 +17,7 @@ const MenuItem = ({ name }) => (
 
 const Navbar = () => {
   return (
-    <nav className="navbar bg-white dark:bg-gray-800">
+    <nav className="fixed z-50 w-full bg-white dark:bg-gray-800 shadow-[0_0_8px_0_rgba(0,0,0,0.12)]">
       <div className="container mx-auto p-2 flex justify-between">
         <h1 className="logo">Hi there</h1>
         <ul className="hidden md:flex flex-1 ml-32 max-w-screen-md list-none flex justify-between items-center">

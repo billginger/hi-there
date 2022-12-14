@@ -3,10 +3,6 @@
   src: url('./fonts/ZenDots-Regular.ttf') format('truetype');
 }
 
-.navbar {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
-}
-
 .logo {
   font-family: ZenDots, "Arial Black";
   font-size: 30px;
