@@ -1,5 +1,5 @@
 import { DarkMode } from './DarkMode';
-import './Navbar.css'
+import './Navbar.css';
 
 const MenuItems = ['Intro', 'Skills', 'Hobbies', 'Web3 Demo'];
 
@@ -29,6 +29,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-}
+};
 
 export { Navbar };

@@ -3,18 +3,18 @@ import avatar from "../assets/avatar.jpg";
 const Intro = () => {
   return (
     <div id="Intro" className="relative pt-[60px]">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#f9ffff] to-white dark:from-gray-700 dark:to-gray-900">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#f9ffff] to-white dark:from-blue-900 dark:to-[#050a18]">
         <div
           className="absolute w-40 h-40 rounded-full left-1/4 bottom-8 bg-gradient-to-b from-sky-100
-            dark:from-slate-700 hidden lg:block"
+            dark:from-sky-900 hidden lg:block"
         />
         <div
           className="absolute w-60 h-60 rounded-full right-1/4 -top-10 bg-gradient-to-t from-sky-100
-            dark:from-slate-700"
+            dark:from-sky-900"
         />
         <div
           className="absolute w-[500px] h-[500px] rounded-full right-[5%] -bottom-[240px] bg-gradient-to-b
-            from-sky-100 via-transparent dark:from-slate-700 dark:via-transparent"
+            from-sky-100 via-transparent dark:from-sky-900 dark:via-transparent"
         />
       </div>
       <div className="relative container mx-auto p-2 flex items-center">
@@ -39,6 +39,6 @@ const Intro = () => {
       </div>
     </div>
   );
-}
+};
 
 export { Intro };

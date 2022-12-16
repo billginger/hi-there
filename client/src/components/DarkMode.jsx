@@ -6,7 +6,7 @@ const checkDarkMode = () => {
   } else {
     document.documentElement.classList.remove('dark');
   }
-}
+};
 
 checkDarkMode();
 

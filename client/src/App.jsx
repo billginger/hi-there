@@ -8,6 +8,6 @@ const App = () => {
       <Skills />
     </div>
   );
-}
+};
 
 export default App;
