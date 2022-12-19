@@ -1,4 +1,6 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState } from 'react';
+import useMousePosition from '../hooks/useMousePosition';
+import useInterval from '../hooks/useInterval';
 import './TagCloud.css';
 
 const tags = [
@@ -30,10 +32,16 @@ const tagsInit = () => tags.map((text, index) => {
 
 const TagCloud = () => {
   const [items, setItems] = useState(tagsInit());
+  const tagCloudRef = useRef(null);
+  const mousePosition = useMousePosition();
 
   const next = () => {
-    const a = -(size / radius) * initSpeed;
-    const b = (size / radius) * initSpeed;
+    const rect = tagCloudRef.current.getBoundingClientRect();
+    const mouseX = (mousePosition.x - (rect.left + rect.width / 2)) / 5;
+    const mouseY = (mousePosition.y - (rect.top + rect.height / 2)) / 5;
+
+    const a = -(Math.min(Math.max(-mouseY, -size), size) / radius) * initSpeed;
+    const b = (Math.min(Math.max(-mouseX, -size), size) / radius) * initSpeed;
 
     const l = Math.PI / 180;
     const sc = [
@@ -73,13 +81,12 @@ const TagCloud = () => {
     }));
   };
 
-  useEffect(() => {
-    const interval = setInterval(next, 100);
-    return () => clearInterval(interval);
-  });
+  useInterval(() => {
+    next();
+  }, 100);
 
   return (
-    <div className="relative w-96 h-96 text-gray-900 dark:text-white">
+    <div ref={tagCloudRef} className="relative w-96 h-96 text-gray-900 dark:text-white">
       {items.map(({ index, text, tagRef, opacity, filter, transform }) => (
         <span key={index} ref={tagRef} style={{ opacity, filter, transform }} className="tag">
           {text}
