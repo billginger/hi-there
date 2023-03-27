@@ -1,0 +1,15 @@
+.bg-hobbies {
+  background: radial-gradient(
+    circle at 50% 15%,
+    #ffffff 0%,
+    #ecf6ff 50%
+  );
+}
+
+.dark .bg-hobbies {
+  background: radial-gradient(
+    circle at 50% 15%,
+    #014c83 0%,
+    #001636 50%
+  );
+}

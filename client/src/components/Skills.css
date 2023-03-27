@@ -1,4 +1,4 @@
-.bg-light {
+.bg-skills {
   background: linear-gradient(
     45deg,
     #fff 20%,
@@ -8,7 +8,7 @@
   );
 }
 
-.bg-dark {
+.dark .bg-skills {
   background: linear-gradient(
     45deg,
     #081025 20%,

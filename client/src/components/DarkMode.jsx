@@ -1,4 +1,4 @@
-import { BsSun, BsMoon } from "react-icons/bs";
+import { BsSun, BsMoon } from 'react-icons/bs';
 
 const checkDarkMode = () => {
   if (localStorage.darkMode == 'on') {

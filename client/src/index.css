@@ -21,10 +21,18 @@ body p {
   margin: 0 0 20px;
 }
 
-.line {
+.backup-line {
   height: 3px;
   border-radius: 2px;
   background: linear-gradient(130deg, #ff7a18, #af002d 41%, #319197 76%);
+}
+
+.backup-bg-dark {
+  background: radial-gradient(
+    circle at 0,
+    rgba(23, 62, 59, 1) 0%,
+    rgba(11, 12, 14, 1) 50%
+  );
 }
 
 @tailwind base;

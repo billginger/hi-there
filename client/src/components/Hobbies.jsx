@@ -1,10 +1,11 @@
-import hobbies_1 from "../assets/hobbies-1.jpg";
-import hobbies_2 from "../assets/hobbies-2.jpg";
-import hobbies_3 from "../assets/hobbies-3.jpg";
+import hobbies_1 from '../assets/hobbies-1.jpg';
+import hobbies_2 from '../assets/hobbies-2.jpg';
+import hobbies_3 from '../assets/hobbies-3.jpg';
+import './Hobbies.css';
 
 const Hobbies = () => {
   return (
-    <div id="Hobbies" className="bg-gradient-to-b from-white to-[#f0f7f0] dark:from-[#000e00] dark:to-[#001e00]">
+    <div id="Hobbies" className="bg-hobbies">
       <div className="container mx-auto p-8">
         <div className="text-center p-4">
           <h2 className="inline text-3xl font-semibold text-gray-800 dark:text-white border-b-2 border-blue-300">

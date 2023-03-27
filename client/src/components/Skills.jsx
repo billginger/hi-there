@@ -3,8 +3,7 @@ import './Skills.css';
 
 const Skills = () => (
   <div id="Skills" className="relative">
-    <div className="bg-light absolute inset-0"></div>
-    <div className="bg-dark absolute inset-0 hidden dark:block"></div>
+    <div className="bg-skills absolute inset-0"></div>
     <div className="bg-square absolute inset-0"></div>
     <div className="relative container mx-auto p-2 flex items-center">
       <div className="flex-1 p-6">
