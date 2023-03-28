@@ -7,12 +7,12 @@ const Hobbies = () => {
   return (
     <div id="Hobbies" className="bg-hobbies">
       <div className="container mx-auto p-8">
-        <div className="text-center p-4">
+        <div className="text-center p-2">
           <h2 className="inline text-3xl font-semibold text-gray-800 dark:text-white border-b-2 border-blue-300">
             Hobbies
           </h2>
         </div>
-        <div className="flex pt-6 pb-4 text-gray-900 dark:text-white">
+        <div className="flex pt-6 pb-2 text-gray-900 dark:text-white">
           <div className="flex-1">
             <img src={hobbies_1} alt="Writing" />
             <h3 className="my-2 text-2xl">Writing</h3>

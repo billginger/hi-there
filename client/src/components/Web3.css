@@ -1,0 +1,48 @@
+.bg-web3 {
+  background: radial-gradient(
+    circle at 10% 10%,
+    #ffffff 0%,
+    #a5b4fc 30%,
+    #a78bfa 70%
+  );
+}
+
+.dark .bg-web3 {
+  background: radial-gradient(
+    circle at 10% 10%,
+    #2f0e49 0%,
+    #120934 30%,
+    #100520 70%
+  );
+}
+
+.web3-table {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border-collapse: separate;
+  border-spacing: 0 1px;
+}
+
+.web3-table thead {
+  background: #ffffff24;
+  margin-bottom: 1px;
+}
+
+.web3-table tbody:before {
+  content: '';
+  display: block;
+  height: 1px;
+}
+
+.web3-table tbody tr {
+  background: #ffffff0d;
+}
+
+.web3-table th {
+  text-align: left;
+  padding: 6px;
+}
+
+.web3-table td {
+  padding: 6px;
+}
