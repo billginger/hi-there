@@ -2,8 +2,8 @@
   background: radial-gradient(
     circle at 10% 10%,
     #ffffff 0%,
-    #a5b4fc 30%,
-    #a78bfa 70%
+    #c7d0fe 30%,
+    #d3c5fd 70%
   );
 }
 
@@ -14,6 +14,10 @@
     #120934 30%,
     #100520 70%
   );
+}
+
+.web3-button {
+  background: linear-gradient(-135deg, rgb(74, 144, 226) 0%, rgb(148, 56, 255) 100%);
 }
 
 .web3-table {

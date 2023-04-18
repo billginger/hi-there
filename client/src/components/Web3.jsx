@@ -10,6 +10,7 @@ const Web3 = () => {
     setAmount,
     sendTransaction,
     isLoading,
+    transactions,
   } = useContext(TransactionContext);
 
   const handleSubmit = e => {
@@ -26,7 +27,7 @@ const Web3 = () => {
         connect your ethereum wallet first, and then you will see the form to send Ether.</p>
       <button
         onClick={connectWallet}
-        className="px-6 py-2 rounded-full text-white font-semibold bg-violet-600 hover:bg-violet-700"
+        className="px-6 py-2 rounded-full text-white font-semibold web3-button"
       >
         Connect Wallet
       </button>
@@ -53,7 +54,7 @@ const Web3 = () => {
       {!isLoading ? (
         <button
           onClick={handleSubmit}
-          className="px-6 py-2 rounded-full text-white font-semibold bg-violet-600 hover:bg-violet-700"
+          className="px-6 py-2 rounded-full text-white font-semibold web3-button"
         >
           Send
         </button>
@@ -81,6 +82,22 @@ const Web3 = () => {
     </div>
   );
 
+  const shortenAddress = address => (
+    `${address.slice(0, 5)}...${address.slice(address.length - 4)}`
+  )
+
+  const transactionList = transactions.map((transaction, index) => (
+    <tr key={index}>
+      <td>
+        <a href={`https://goerli.etherscan.io/address/${transaction.addressFrom}`} target="_blank" rel="noreferrer">
+          {shortenAddress(transaction.addressFrom)}
+        </a>
+      </td>
+      <td>{transaction.amount}</td>
+      <td>{transaction.timestamp}</td>
+    </tr>
+  ))
+
   return (
     <div id="Web3 Demo" className="bg-web3">
       <div className="container mx-auto p-8">
@@ -102,11 +119,7 @@ const Web3 = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                </tr>
+                {transactionList}
               </tbody>
             </table>
           </div>
