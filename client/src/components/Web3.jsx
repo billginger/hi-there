@@ -19,7 +19,7 @@ const Web3 = () => {
   };
 
   const sendEther = (
-    <div className="flex-1 pr-10">
+    <div className="flex-1 pr-0 md:pr-10">
       <h3 className="my-2 text-2xl">
         Send Ether to me
       </h3>
@@ -35,7 +35,7 @@ const Web3 = () => {
   );
 
   const sendEther2 = (
-    <div className="flex-1 pr-10">
+    <div className="flex-1 pr-0 md:pr-10">
       <h3 className="my-2 text-2xl">
         Send Ether to me
       </h3>
@@ -84,7 +84,7 @@ const Web3 = () => {
 
   const shortenAddress = address => (
     `${address.slice(0, 5)}...${address.slice(address.length - 4)}`
-  )
+  );
 
   const transactionList = transactions.map((transaction, index) => (
     <tr key={index}>
@@ -96,7 +96,13 @@ const Web3 = () => {
       <td>{transaction.amount}</td>
       <td>{transaction.timestamp}</td>
     </tr>
-  ))
+  ));
+
+  const noRecords = (
+    <tr>
+      <td colSpan="3" className="text-center">Please connect wallet first</td>
+    </tr>
+  );
 
   return (
     <div id="Web3" className="bg-web3">
@@ -104,9 +110,9 @@ const Web3 = () => {
         <h2 className="inline text-3xl font-semibold text-gray-800 dark:text-white border-b-2 border-indigo-300">
           Web3 Demo
         </h2>
-        <div className="my-8 flex text-gray-900 dark:text-white">
+        <div className="my-8 flex text-gray-900 dark:text-white flex-col md:flex-row">
           {!currentAccount ? sendEther : sendEther2}
-          <div className="flex-1">
+          <div className="flex-1 pt-10 md:pt-0">
             <h3 className="my-2 text-2xl">
               Transaction history
             </h3>
@@ -119,7 +125,7 @@ const Web3 = () => {
                 </tr>
               </thead>
               <tbody>
-                {transactionList}
+                {transactions.length ? transactionList : noRecords}
               </tbody>
             </table>
           </div>

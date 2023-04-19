@@ -17,11 +17,11 @@ const Intro = () => {
             from-sky-100 via-transparent dark:from-sky-900 dark:via-transparent"
         />
       </div>
-      <div className="relative container mx-auto p-2 flex items-center">
+      <div className="relative container mx-auto p-2 flex items-center flex-col md:flex-row">
         <div>
-          <img src={avatar} alt="avatar" className="w-72 m-12 rounded-full" />
+          <img src={avatar} alt="avatar" className="w-72 m-6 md:m-12 rounded-full" />
         </div>
-        <div className="flex-1 pl-6 pr-1 py-6">
+        <div className="flex-1 p-1 md:pl-6 md:pr-1 md:py-6">
           <h2 className="inline text-3xl font-semibold text-gray-800 dark:text-white border-b-2 border-blue-300">
             Intro
           </h2>

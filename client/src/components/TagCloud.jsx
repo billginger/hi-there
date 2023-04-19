@@ -86,7 +86,7 @@ const TagCloud = () => {
   }, 100);
 
   return (
-    <div ref={tagCloudRef} className="relative w-96 h-96 text-gray-900 dark:text-white">
+    <div ref={tagCloudRef} className="relative w-80 md:w-96 h-80 md:h-96 text-gray-900 dark:text-white">
       {items.map(({ index, text, tagRef, opacity, filter, transform }) => (
         <span key={index} ref={tagRef} style={{ opacity, filter, transform }} className="tag">
           {text}

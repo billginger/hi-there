@@ -13,7 +13,7 @@ const MenuItem = ({ name }) => {
   });
 
   return (
-    <li>
+    <li className="hidden md:list-item">
       <a
         href="#"
         onClick={e => {
@@ -34,7 +34,7 @@ const Navbar = () => {
     <nav className="fixed z-50 w-full bg-white dark:bg-gray-800 shadow-[0_0_8px_0_rgba(0,0,0,0.12)]">
       <div className="container mx-auto p-2 flex justify-between">
         <h1 className="logo">Hi there</h1>
-        <ul className="hidden md:flex flex-1 ml-32 max-w-screen-md list-none flex justify-between items-center">
+        <ul className="flex md:flex-1 ml-32 max-w-screen-md list-none flex justify-between items-center">
           {MenuItems.map((item, index) => (
             <MenuItem key={item + index} name={item} />
           ))}
