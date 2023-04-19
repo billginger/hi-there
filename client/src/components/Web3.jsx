@@ -99,7 +99,7 @@ const Web3 = () => {
   ))
 
   return (
-    <div id="Web3 Demo" className="bg-web3">
+    <div id="Web3" className="bg-web3">
       <div className="container mx-auto px-3 py-8">
         <h2 className="inline text-3xl font-semibold text-gray-800 dark:text-white border-b-2 border-indigo-300">
           Web3 Demo

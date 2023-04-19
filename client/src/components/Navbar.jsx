@@ -1,19 +1,33 @@
+import React, { useRef } from 'react';
+import useSmoothScroll from 'react-smooth-scroll-hook';
 import { DarkMode } from './DarkMode';
 import './Navbar.css';
 
-const MenuItems = ['Intro', 'Skills', 'Hobbies', 'Web3 Demo'];
+const MenuItems = ['Intro', 'Skills', 'Hobbies', 'Web3'];
 
-const MenuItem = ({ name }) => (
-  <li>
-    <a
-      href={`#${name}`}
-      className="font-semibold text-gray-800 dark:text-violet-50 hover:text-violet-500 dark:hover:text-violet-400
-        transition duration-300"
-    >
-      {name}
-    </a>
-  </li>
-);
+const MenuItem = ({ name }) => {
+  const ref = useRef(document.documentElement);
+  const { scrollTo } = useSmoothScroll({
+    ref,
+    speed: 60,
+  });
+
+  return (
+    <li>
+      <a
+        href="#"
+        onClick={e => {
+          e.preventDefault();
+          scrollTo(`#${name}`, -60);
+        }}
+        className="font-semibold text-gray-800 dark:text-violet-50 hover:text-violet-500 dark:hover:text-violet-400
+          transition duration-300"
+      >
+        {name == 'Web3' ? 'Web3 Demo' : name}
+      </a>
+    </li>
+  );
+};
 
 const Navbar = () => {
   return (

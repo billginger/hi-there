@@ -40,7 +40,7 @@ export const TransactionsProvider = ({ children }) => {
 
         setTransactions(structuredTransactions);
       } else {
-        console.log("Ethereum is not present");
+        console.log('Ethereum is not present');
       }
     } catch (error) {
       console.log(error);
@@ -70,7 +70,7 @@ export const TransactionsProvider = ({ children }) => {
         const transactionsContract = createEthereumContract();
         const currentTransactionCount = await transactionsContract.getTransactionCount();
 
-        window.localStorage.setItem("transactionCount", currentTransactionCount);
+        window.localStorage.setItem('transactionCount', currentTransactionCount);
       }
     } catch (error) {
       console.log(error);
