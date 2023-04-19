@@ -6,7 +6,7 @@ const Skills = () => (
     <div className="bg-skills absolute inset-0"></div>
     <div className="bg-square absolute inset-0"></div>
     <div className="relative container mx-auto p-2 flex items-center">
-      <div className="flex-1 p-6">
+      <div className="flex-1 pl-1 pr-6 py-6">
         <h2 className="inline text-3xl font-semibold text-gray-800 dark:text-white border-b-2 border-indigo-300">
           Skills
         </h2>

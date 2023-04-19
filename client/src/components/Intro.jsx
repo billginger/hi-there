@@ -21,7 +21,7 @@ const Intro = () => {
         <div>
           <img src={avatar} alt="avatar" className="w-72 m-12 rounded-full" />
         </div>
-        <div className="flex-1 p-6">
+        <div className="flex-1 pl-6 pr-1 py-6">
           <h2 className="inline text-3xl font-semibold text-gray-800 dark:text-white border-b-2 border-blue-300">
             Intro
           </h2>

@@ -6,7 +6,7 @@ import './Hobbies.css';
 const Hobbies = () => {
   return (
     <div id="Hobbies" className="bg-hobbies">
-      <div className="container mx-auto p-8">
+      <div className="container mx-auto px-3 py-8">
         <div className="text-center p-2">
           <h2 className="inline text-3xl font-semibold text-gray-800 dark:text-white border-b-2 border-blue-300">
             Hobbies
