@@ -1,6 +1,6 @@
 @font-face {
   font-family: ZenDots;
-  src: url('./fonts/ZenDots-Regular.ttf') format('truetype');
+  src: url('/fonts/ZenDots-Regular.ttf') format('truetype');
 }
 
 .logo {
