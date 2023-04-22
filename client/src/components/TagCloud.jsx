@@ -4,8 +4,9 @@ import useInterval from '../hooks/useInterval';
 import './TagCloud.css';
 
 const tags = [
-  'HTML', 'CSS', 'JavaScript', 'VB', 'ASP', 'Flash', 'jQuery', 'BootStrap', 'PHP', 'MySQL', 'React', 'AntDesign',
-  'ECharts', 'Node.js', 'MongoDB', 'TypeScript', 'GraphQL', 'Web3', 'Linux', 'Nginx', 'Docker', 'Severless', 'Electron'
+  'HTML', 'CSS', 'JavaScript', 'jQuery', 'ECharts', 'BootStrap', 'PHP', 'MySQL', 'React', 'Webpack', 'AntDesign',
+  'Less', 'Node.js', 'Express', 'MongoDB', 'Linux', 'Nginx', 'Docker', 'Microservices', 'TypeScript', 'ESLint',
+  'Jest', 'Serverless', 'GraphQL', 'Electron', 'Web3', 'tailwindcss'
 ];
 
 const radius = 192;

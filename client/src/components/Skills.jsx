@@ -15,8 +15,8 @@ const Skills = () => (
             through books.</p>
           <p>After graduation, my first job was to develop dynamic websites using ASP, and I also learned and used
             Flash, which was very popular at that time.</p>
-          <p>In my more than 10 years of work, I have learned jQuery, BootStrap, PHP, MySQL, React, Node.js, MongoDB,
-            TypeScript, GraphQL, and used them in my projects.</p>
+          <p>In my nearly 20 years of work, I have learned jQuery, BootStrap, PHP, MySQL, React, Node.js, MongoDB,
+            TypeScript, Jest, GraphQL, and used them in my projects.</p>
           <p>I am now very interested in Web3, for which I learned blockchain technology and smart contracts, and
             look forward to working on projects related to Web3.</p>
         </div>

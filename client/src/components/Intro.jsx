@@ -26,11 +26,11 @@ const Intro = () => {
             Intro
           </h2>
           <div className="my-8 text-gray-900 dark:text-white">
-            <p>18 years of experience in web development and 6 years of experience in full-stack architecture and
+            <p>18 years of experience in web development and 4 years of experience in full-stack architecture and
               leading teams.</p>
             <p>Have worked for large state-owned enterprises, entrepreneurial foreign companies, and
               multinational Internet teams.</p>
-            <p>In order to balance work, life and literary creation, started to try to work remotely from home
+            <p>In order to balance work, life, and literary creation, started to try to work remotely from home
               in August 2020.</p>
             <p>Responsible, attention to detail, and love of learning new technologies are the key factors that
               benefit me in my work and keep me improving.</p>
