@@ -6,7 +6,7 @@ import './TagCloud.css';
 const tags = [
   'HTML', 'CSS', 'JavaScript', 'jQuery', 'ECharts', 'BootStrap', 'PHP', 'MySQL', 'React', 'Webpack', 'AntDesign',
   'Less', 'Node.js', 'Express', 'MongoDB', 'Linux', 'Nginx', 'Docker', 'Microservices', 'TypeScript', 'ESLint',
-  'Jest', 'Serverless', 'GraphQL', 'Electron', 'Web3', 'Vite', 'tailwindcss'
+  'Jest', 'GraphQL', 'Electron', 'Web3', 'Vite', 'tailwindcss', 'Serverless', 'Lambda', 'DynamoDB', 'Next.js'
 ];
 
 const radius = 192;
